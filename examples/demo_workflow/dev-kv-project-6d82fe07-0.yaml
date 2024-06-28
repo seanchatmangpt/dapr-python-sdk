@@ -1,0 +1,15 @@
+project: kv-project-6d82fe07-0
+apps:
+- appId: orderapp
+  appPort: 0
+  env:
+    DAPR_API_TOKEN: diagrid://v1/21bf71b5-781d-4336-95ec-65103ea5e514/145384/kv-project-6d82fe07-0/orderapp/57dcbf44-cc14-46c3-a4f6-38fd2baa35d6
+    DAPR_APP_ID: orderapp
+    DAPR_CLIENT_TIMEOUT_SECONDS: 10
+    DAPR_GRPC_ENDPOINT: https://grpc-prj145384.api.cloud.diagrid.io:443
+    DAPR_HTTP_ENDPOINT: https://http-prj145384.api.cloud.diagrid.io
+  workDir: .
+  command:
+  - python
+  - fast_app.py
+appLogDestination: ""

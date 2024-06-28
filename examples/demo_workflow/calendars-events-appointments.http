@@ -1,0 +1,24 @@
+@baseUrl = https://stoplight.io/mocks/highlevel/integrations/39582850
+@authToken = 9c48df2694a849b6089f9d0d3513efe
+@version = 2021-04-15
+
+### Create Appointment
+POST {{baseUrl}}/calendars/events/appointments
+Authorization: Bearer {{authToken}}
+Version: {{version}}
+Content-Type: application/json
+Accept: application/json
+
+{
+  "calendarId": "CVokAlI8fgw4WYWoCtQz",
+  "locationId": "C2QujeCh8ZnC7al2InWR",
+  "contactId": "0007BWpSzSwfiuSl0tR2",
+  "startTime": "2021-06-23T03:30:00+05:30",
+  "endTime": "2021-06-23T04:30:00+05:30",
+  "title": "Test Event",
+  "appointmentStatus": "new",
+  "assignedUserId": "0007BWpSzSwfiuSl0tR2",
+  "address": "Zoom",
+  "ignoreDateRange": false,
+  "toNotify": false
+}
